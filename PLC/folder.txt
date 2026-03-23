@@ -1,0 +1,66 @@
+AutoShop
+	1
+PROG
+ROOT
+	FILE	MAIN.LD
+	FILE	SBR_04_自动模式.LD
+	FOLDER	IO
+		FILE	SBR_IO_IN.ST
+		FILE	SBR_IO_IN_1.ST
+		FILE	SBR_IO_IN_映射.ST
+		FILE	SBR_IO_OUT.ST
+		FILE	SBR_IO_OUT_1.ST
+		FILE	SBR_IO_OUT_映射.ST
+		FILE	SBR_称重传感器.ST
+	FOLDER	报警
+		FILE	SBR_Alarm.ST
+		FILE	SBR_Alarm_Act.ST
+		FILE	SBR_Alarm_Modbus.ST
+		FILE	SBR_ResetAlarm.ST
+		FILE	SBR_WARN_MODBUS.ST
+		FILE	SBR_Warning.ST
+	FOLDER	工艺
+		FILE	SBR_01_放料预紧.ST
+		FILE	SBR_02_步进.ST
+		FILE	SBR_03_采集.ST
+		FILE	SBR_04_冲裁.ST
+		FILE	SBR_05_取盒.ST
+		FILE	SBR_06_取盖.ST
+		FILE	SBR_07_扣盖子.ST
+		FILE	SBR_07_装入高纯锗.ST
+		FILE	SBR_08_入库.ST
+		FILE	SBR_整体动作.ST
+	FOLDER	人机交互
+		FILE	SBR_Hmi_to_Plc.ST
+		FILE	SBR_PLC_TO_HMI_MODBUS.ST
+		FILE	SBR_Plc_to_Hmi.ST
+	FOLDER	通讯
+	FOLDER	推杆及气缸
+		FILE	SBR_推杆及气缸.ST
+	FOLDER	系统功能
+		FILE	SBR_一键功能.ST
+		FILE	SBR_系统急停.LD
+	FOLDER	系统流程
+	FOLDER	系统状态
+		FILE	SBR_RPG_Enable.LD
+		FILE	SBR_RPG_Init.LD
+		FILE	SBR_RPG_Power.LD
+	FOLDER	轴功能
+		FILE	SBR_总线控制轴_9_10.ST
+		FILE	SBR_总线轴控制_1_2.ST
+		FILE	SBR_总线轴控制_3_4.ST
+		FILE	SBR_总线轴控制_5_6.ST
+		FILE	SBR_总线轴控制_7_8.ST
+		FILE	SBR_手动模式.ST
+FB
+ROOT
+	FILE	FB_Alarm.FB
+	FILE	FB_AxisMC.FB
+	FILE	FB_Cylinder.FB
+	FILE	FB_Putter.FB
+	FILE	FB_TON.FB
+	FILE	PRG_Estop.FB
+	FILE	防抖动功能块.FB
+	FOLDER	FB_Action_TakeBox
+FC
+ROOT

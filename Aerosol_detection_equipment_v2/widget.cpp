@@ -7396,22 +7396,40 @@ void Widget::on_btn_MoveVel_Close_Axi_8_clicked()
 
 void Widget::on_check_OpenCylinder_1_clicked(bool checked) //气缸
 {
-
-
     quint16 j = checked? 1:2;
     const int serverId  = 1;
     const int addr      = 300;
     const quint16 onVal = j;
+    const quint16 offVal= 0;
+    const int holdMs    = 100;
     QModbusDataUnit unitOn(QModbusDataUnit::HoldingRegisters, addr, 1);
     unitOn.setValue(0, onVal);
     QModbusReply *replyOn = modbusClient->sendWriteRequest(unitOn, serverId);
     if (!replyOn) {
-        qDebug() << "Failed to send SoftOpen request (Axi_9).";
+        qDebug() << "Failed to send onVal."<<j;
         return;
     }
-    connect(replyOn, &QModbusReply::finished, replyOn, &QObject::deleteLater);
 
+    connect(replyOn, &QModbusReply::finished, this, [=]() {
+        if (replyOn->error() != QModbusDevice::NoError) {
+            qDebug() << "failed :" << replyOn->errorString();
+            replyOn->deleteLater();
+            return;
+        }
+        replyOn->deleteLater();
 
+        QTimer::singleShot(holdMs, this, [=]() {
+            QModbusDataUnit unitOff(QModbusDataUnit::HoldingRegisters, addr, 1);
+            unitOff.setValue(0, offVal);
+
+            QModbusReply *replyOff = modbusClient->sendWriteRequest(unitOff, serverId);
+            if (!replyOff) {
+                qDebug() << "Failed send offVal";
+                return;
+            }
+            connect(replyOff, &QModbusReply::finished, replyOff, &QObject::deleteLater);
+        });
+    });
 
 }
 
@@ -7424,14 +7442,39 @@ void Widget::on_check_OpenCylinder_2_clicked(bool checked) //气缸
     const int serverId  = 1;
     const int addr      = 301;
     const quint16 onVal = j;
+    const quint16 offVal= 0;
+    const int holdMs    = 100;
     QModbusDataUnit unitOn(QModbusDataUnit::HoldingRegisters, addr, 1);
     unitOn.setValue(0, onVal);
     QModbusReply *replyOn = modbusClient->sendWriteRequest(unitOn, serverId);
     if (!replyOn) {
-        qDebug() << "Failed to send SoftOpen request (Axi_9).";
+        qDebug() << "Failed to send onVal."<<j;
         return;
     }
-    connect(replyOn, &QModbusReply::finished, replyOn, &QObject::deleteLater);
+
+    connect(replyOn, &QModbusReply::finished, this, [=]() {
+        if (replyOn->error() != QModbusDevice::NoError) {
+            qDebug() << "failed :" << replyOn->errorString();
+            replyOn->deleteLater();
+            return;
+        }
+        replyOn->deleteLater();
+
+        QTimer::singleShot(holdMs, this, [=]() {
+            QModbusDataUnit unitOff(QModbusDataUnit::HoldingRegisters, addr, 1);
+            unitOff.setValue(0, offVal);
+
+            QModbusReply *replyOff = modbusClient->sendWriteRequest(unitOff, serverId);
+            if (!replyOff) {
+                qDebug() << "Failed send offVal";
+                return;
+            }
+            connect(replyOff, &QModbusReply::finished, replyOff, &QObject::deleteLater);
+        });
+    });
+
+
+
 }
 
 
@@ -8490,14 +8533,35 @@ void Widget::on_check_GetPaper_clicked(bool checked)
     const int serverId  = 1;
     const int addr      = 308;
     const quint16 onVal = j;
+    const quint16 offVal= 0;
+    const int holdMs    = 100;
     QModbusDataUnit unitOn(QModbusDataUnit::HoldingRegisters, addr, 1);
     unitOn.setValue(0, onVal);
     QModbusReply *replyOn = modbusClient->sendWriteRequest(unitOn, serverId);
     if (!replyOn) {
-        qDebug() << "Failed to send SoftOpen on_check_GetPaper_clicked ().";
+        qDebug() << "Failed to send onVal."<<j;
         return;
     }
-    connect(replyOn, &QModbusReply::finished, replyOn, &QObject::deleteLater);
 
+    connect(replyOn, &QModbusReply::finished, this, [=]() {
+        if (replyOn->error() != QModbusDevice::NoError) {
+            qDebug() << "failed :" << replyOn->errorString();
+            replyOn->deleteLater();
+            return;
+        }
+        replyOn->deleteLater();
+
+        QTimer::singleShot(holdMs, this, [=]() {
+            QModbusDataUnit unitOff(QModbusDataUnit::HoldingRegisters, addr, 1);
+            unitOff.setValue(0, offVal);
+
+            QModbusReply *replyOff = modbusClient->sendWriteRequest(unitOff, serverId);
+            if (!replyOff) {
+                qDebug() << "Failed send offVal";
+                return;
+            }
+            connect(replyOff, &QModbusReply::finished, replyOff, &QObject::deleteLater);
+        });
+    });
 }
 

@@ -132,32 +132,32 @@ void Widget::onReadFinished3()
         int swflag;
         swflag=unit.value(0);
 
-        if(unit.value(0)==0)
-        {
-          ui->lineEdit_Mode->setText("关机");
-        }
-        else if(unit.value(0)==1)
-        {
-            ui->lineEdit_Mode->setText("初始化");
-        }
-        else if(unit.value(0)==2)
-        {
-            ui->lineEdit_Mode->setText("手动");
-        }
-        else if(unit.value(0)==3)
-        {
-            ui->lineEdit_Mode->setText("自动");
-        }
-        else if(unit.value(0)==4)
-        {
-            ui->lineEdit_Mode->setText("自动");
-        }
-        else if(unit.value(0)==5)
-        {
-            ui->lineEdit_Mode->setText("故障");
-        }
-        else
-            ui->lineEdit_Mode->setText("关机");
+        // if(unit.value(0)==0)
+        // {
+        //   ui->lineEdit_Mode->setText("关机");
+        // }
+        // else if(unit.value(0)==1)
+        // {
+        //     ui->lineEdit_Mode->setText("初始化");
+        // }
+        // else if(unit.value(0)==2)
+        // {
+        //     ui->lineEdit_Mode->setText("手动");
+        // }
+        // else if(unit.value(0)==3)
+        // {
+        //     ui->lineEdit_Mode->setText("自动");
+        // }
+        // else if(unit.value(0)==4)
+        // {
+        //     ui->lineEdit_Mode->setText("自动");
+        // }
+        // else if(unit.value(0)==5)
+        // {
+        //     ui->lineEdit_Mode->setText("故障");
+        // }
+        // else
+        //     ui->lineEdit_Mode->setText("关机");
 
     }
 
@@ -892,15 +892,15 @@ void Widget::Set_On_Auto()
 }
 void Widget::on_btn_Axi_Mode_Switch_clicked()
 {
-    if (ui->lineEdit_Mode->text()=="手动")
-    {
-         qDebug() << "ui->lineEdit_Mode->text()==\"手动\"";
-        Set_On_Auto();
-    }
-    else
-    {
-        Set_On_Manu();
-    }
+    // if (ui->lineEdit_Mode->text()=="手动")
+    // {
+    //      qDebug() << "ui->lineEdit_Mode->text()==\"手动\"";
+    //     Set_On_Auto();
+    // }
+    // else
+    // {
+    //     Set_On_Manu();
+    // }
 }
 
 

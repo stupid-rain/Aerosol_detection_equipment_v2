@@ -1,6 +1,6 @@
 #ifndef WIDGET_H
 #define WIDGET_H
-
+#include<Qcoreapplication>
 #include <QWidget>
 #include <QDebug>//用于在控制台输出调试信息
 #include <QMessageBox>

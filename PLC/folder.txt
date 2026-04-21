@@ -25,6 +25,7 @@ ROOT
 		FILE	SBR_07_扣盖子.ST
 		FILE	SBR_07_装入高纯锗.ST
 		FILE	SBR_08_入库.ST
+		FILE	SBR_持续走.ST
 		FILE	SBR_整体动作.ST
 	FOLDER	人机交互
 		FILE	SBR_Hmi_to_Plc.ST

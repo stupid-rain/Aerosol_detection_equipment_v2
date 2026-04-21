@@ -56,7 +56,7 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;1111&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="currentIndex">
-    <number>7</number>
+    <number>3</number>
    </property>
    <widget class="QWidget" name="tab_cmd">
     <attribute name="title">
@@ -66,7 +66,7 @@
      <property name="geometry">
       <rect>
        <x>660</x>
-       <y>280</y>
+       <y>220</y>
        <width>141</width>
        <height>71</height>
       </rect>
@@ -79,7 +79,7 @@
      <property name="geometry">
       <rect>
        <x>450</x>
-       <y>280</y>
+       <y>220</y>
        <width>131</width>
        <height>71</height>
       </rect>
@@ -92,7 +92,7 @@
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>280</y>
+       <y>220</y>
        <width>131</width>
        <height>71</height>
       </rect>
@@ -104,8 +104,8 @@
     <widget class="QGroupBox" name="Ads">
      <property name="geometry">
       <rect>
-       <x>110</x>
-       <y>30</y>
+       <x>90</x>
+       <y>70</y>
        <width>751</width>
        <height>91</height>
       </rect>
@@ -198,7 +198,7 @@
      <property name="geometry">
       <rect>
        <x>90</x>
-       <y>280</y>
+       <y>220</y>
        <width>121</width>
        <height>71</height>
       </rect>
@@ -207,69 +207,11 @@
       <string>回原点</string>
      </property>
     </widget>
-    <widget class="QGroupBox" name="groupBox_2">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>130</y>
-       <width>751</width>
-       <height>131</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>模式</string>
-     </property>
-     <widget class="QLineEdit" name="lineEdit_Mode">
-      <property name="geometry">
-       <rect>
-        <x>450</x>
-        <y>50</y>
-        <width>131</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>关机</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="AutoButton">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>60</y>
-        <width>95</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>自动模式</string>
-      </property>
-     </widget>
-     <widget class="QRadioButton" name="ManuButton">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>60</y>
-        <width>95</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>手动模式</string>
-      </property>
-      <property name="checked">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </widget>
     <widget class="QPushButton" name="btn_Axi_All_Enable">
      <property name="geometry">
       <rect>
        <x>90</x>
-       <y>390</y>
+       <y>330</y>
        <width>121</width>
        <height>71</height>
       </rect>
@@ -282,7 +224,7 @@
      <property name="geometry">
       <rect>
        <x>260</x>
-       <y>390</y>
+       <y>330</y>
        <width>121</width>
        <height>71</height>
       </rect>
@@ -295,7 +237,7 @@
      <property name="geometry">
       <rect>
        <x>80</x>
-       <y>580</y>
+       <y>540</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -311,7 +253,7 @@
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>540</y>
+       <y>500</y>
        <width>61</width>
        <height>23</height>
       </rect>
@@ -327,7 +269,7 @@
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>500</y>
+       <y>460</y>
        <width>61</width>
        <height>23</height>
       </rect>
@@ -343,7 +285,7 @@
      <property name="geometry">
       <rect>
        <x>80</x>
-       <y>500</y>
+       <y>460</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -359,7 +301,7 @@
      <property name="geometry">
       <rect>
        <x>190</x>
-       <y>580</y>
+       <y>540</y>
        <width>61</width>
        <height>23</height>
       </rect>
@@ -375,7 +317,7 @@
      <property name="geometry">
       <rect>
        <x>80</x>
-       <y>540</y>
+       <y>500</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -391,7 +333,7 @@
      <property name="geometry">
       <rect>
        <x>300</x>
-       <y>500</y>
+       <y>460</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -407,7 +349,7 @@
      <property name="geometry">
       <rect>
        <x>300</x>
-       <y>540</y>
+       <y>500</y>
        <width>91</width>
        <height>21</height>
       </rect>
@@ -423,7 +365,7 @@
      <property name="geometry">
       <rect>
        <x>410</x>
-       <y>500</y>
+       <y>460</y>
        <width>61</width>
        <height>23</height>
       </rect>
@@ -439,7 +381,7 @@
      <property name="geometry">
       <rect>
        <x>410</x>
-       <y>540</y>
+       <y>500</y>
        <width>61</width>
        <height>23</height>
       </rect>
@@ -2794,7 +2736,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>390</string>
+       <string>410</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -2980,7 +2922,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>300</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -2996,7 +2938,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>10</string>
+       <string>80</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -3788,7 +3730,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>14</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -3804,7 +3746,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>114</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -3910,7 +3852,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>10</string>
+       <string>214</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -3942,7 +3884,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>314</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -3974,7 +3916,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>10</string>
+       <string>414</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -3990,7 +3932,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>10</string>
+       <string>80</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -4568,7 +4510,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>647</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -4819,7 +4761,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>14</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -4835,7 +4777,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>114</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -4941,7 +4883,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>214</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -4973,7 +4915,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>314</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -5005,7 +4947,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>414</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -5021,7 +4963,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>200</string>
+       <string>80</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -6015,7 +5957,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>200</string>
+       <string>10</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -9094,7 +9036,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>10</string>
+       <string>80</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -9870,7 +9812,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>10</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -9886,7 +9828,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>10</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -9902,7 +9844,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>134</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -10008,7 +9950,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0</string>
+       <string>20</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -10088,7 +10030,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>10</string>
+       <string>40</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -11679,9 +11621,6 @@
   <tabstop>lineEdit_plc_connect_status</tabstop>
   <tabstop>lineEdit_plc_addr</tabstop>
   <tabstop>btn_Axi_All_GoHome</tabstop>
-  <tabstop>lineEdit_Mode</tabstop>
-  <tabstop>AutoButton</tabstop>
-  <tabstop>ManuButton</tabstop>
   <tabstop>btn_CapOn</tabstop>
   <tabstop>btn_Collect</tabstop>
   <tabstop>btn_CutPaper</tabstop>
